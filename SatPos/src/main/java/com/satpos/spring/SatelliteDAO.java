@@ -14,68 +14,68 @@ import javax.persistence.Table;
 public class SatelliteDAO
 {
     @Column
-    public String Name_of_Satellite_Alternate_Names;
+    private String Name_of_Satellite_Alternate_Names;
     @Column
-    public String Current_Official_Name_of_Satellite;
+    private String Current_Official_Name_of_Satellite;
     @Column
-    public String CountryOrg_of_UN_Registry;
+    private String CountryOrg_of_UN_Registry;
     @Column
-    public String Country_of_OperatorOwner;
+    private String Country_of_OperatorOwner;
     @Column
-    public String OperatorOwner;
+    private String OperatorOwner;
     @Column
-    public String Users;
+    private String Users;
     @Column
-    public String Purpose;
+    private String Purpose;
     @Column
-    public String Detailed_Purpose;
+    private String Detailed_Purpose;
     @Column
-    public String Class_of_Orbit;
+    private String Class_of_Orbit;
     @Column
-    public String Type_of_Orbit;
+    private String Type_of_Orbit;
     @Column
-    public String Longitude_of_GEO_degrees;
+    private String Longitude_of_GEO_degrees;
     @Column
-    public String Eccentricity;
+    private String Eccentricity;
     @Column
-    public String Inclination_degrees;
+    private String Inclination_degrees;
     @Column
-    public String Period_minutes;
+    private String Period_minutes;
     @Column
-    public String Dry_Mass_kg;
+    private String Dry_Mass_kg;
     @Column
-    public String Power_watts;
+    private String Power_watts;
     @Column
-    public String Date_of_Launch;
+    private String Date_of_Launch;
     @Column
-    public String Expected_Lifetime_yrs;
+    private String Expected_Lifetime_yrs;
     @Column
-    public String Contractor;
+    private String Contractor;
     @Column
-    public String Country_of_Contractor;
+    private String Country_of_Contractor;
     @Column
-    public String Launch_Site;
+    private String Launch_Site;
     @Column
-    public String Launch_Vehicle;
+    private String Launch_Vehicle;
     @Column
-    public String COSPAR_Number;
+    private String COSPAR_Number;
     @Id
-    public int NORAD_Number;
+    private int NORAD_Number;
     @Column
-    public String Comments;
+    private String Comments;
     @Column
-    public String FIELD29;
+    private String FIELD29;
     @Column
-    public String Source_Used_for_Orbital_Data;
+    private String Source_Used_for_Orbital_Data;
     @Column
-    public String Source;
+    private String Source;
 
     @Column
-    public String Perigee_km;
+    private String Perigee_km;
     @Column
-    public String Apogee_km;
+    private String Apogee_km;
     @Column(unique = false, nullable = true)
-    public Integer Launch_Mass_kg;
+    private Integer Launch_Mass_kg;
 
     public SatelliteDAO(){}
 
